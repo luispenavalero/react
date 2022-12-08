@@ -21,10 +21,10 @@ const ItemDetailContainer = () => {
     }, [id]);
 
     return (
-        console.log(item)
-       /*<div className="container">
+
+       <div className="container">
            <ItemDetail item={item} /> 
-        </div>*/
+        </div>
     )
 }
 

@@ -1,4 +1,5 @@
 import React from "react";
+import ItemCount from "./ItemCount";
 
 const ItemDetail = ({item}) => {
 
@@ -13,7 +14,8 @@ const ItemDetail = ({item}) => {
             <h5>{item.categoria}</h5>
             <p>{item.descripcion}</p>     
             <p>{item.tallas}</p>   
-            <p>{item.precio}</p>      
+            <p>{item.precio}</p>  
+            <ItemCount stock={20}/>    
         </div>
     </div>
     )

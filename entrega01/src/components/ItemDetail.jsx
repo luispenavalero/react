@@ -1,8 +1,19 @@
-import React from "react";
+import React, { useEffect, useState, useContext } from "react";
 import ItemCount from "./ItemCount";
+import { CartContext } from "./context/CartContext";
 
 const ItemDetail = ({item}) => {
+    const {addItem} = useContext(CartContext);
+    const [itemStock, setItemStock] = useState(0);
 
+    const onAdd = (quantity) => {
+        setItemStock(itemStock - quantity);
+        addItem(item, quantity);
+    }
+
+    useEffect(() => {
+        setItemStock(item.stock);
+    }, [item])
 
     return (
     <div className="row">
@@ -13,9 +24,9 @@ const ItemDetail = ({item}) => {
             <h1>{item.nombre}</h1>
             <h5>{item.categoria}</h5>
             <p>{item.descripcion}</p>     
-            <p>{item.tallas}</p>   
-            <p>{item.precio}</p>  
-            <ItemCount stock={20}/>    
+            <p>Tallas: {item.tallas}</p>   
+            <p>Precio: ${item.precio}</p>  
+            <ItemCount stock={item.stock} onAdd={onAdd} />    
         </div>
     </div>
     )

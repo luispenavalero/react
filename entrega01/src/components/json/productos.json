@@ -4,8 +4,8 @@
     "nombre": "Hoodie Negro", 
     "descripcion": "Lorem Ipsum is simply dummy text of the printing", 
     "imagen": "https://m.media-amazon.com/images/I/51D3GxhXxaL.jpg",
-    "precio": "$12",
-    "stock": "20",
+    "precio": 12,
+    "stock": 20,
     "tallas": ["xs, ", "s, ", "m, ", "l, ", "xl, ", "xxl, "]
     },
     {"id": 2, 
@@ -13,8 +13,8 @@
     "nombre": "Hoodie Blanco", 
     "descripcion": "Lorem Ipsum is simply dummy text of the printing", 
     "imagen": "https://m.media-amazon.com/images/I/71mLPQuetFL.jpg",
-    "precio": "$15",
-    "stock": "15",
+    "precio": 15,
+    "stock": 15,
     "tallas": ["s, ", "m, ", "l, ", "xl, ", "xxl, "]
     },
     {"id": 3, 
@@ -22,8 +22,8 @@
     "nombre": "Hoodie Menta", 
     "descripcion": "Lorem Ipsum is simply dummy text of the printing", 
     "imagen": "https://m.media-amazon.com/images/I/71WAHW1dDPL.jpg",
-    "precio": "$20",
-    "stock": "10",
+    "precio": 20,
+    "stock": 10,
     "tallas": ["xs, ", "s, ", "m, ", "l, ", "xl, ", "xxl, ", "xxxl"]
     },
     {"id": 4, 
@@ -31,8 +31,8 @@
     "nombre": "Jogger Negro", 
     "descripcion": "Lorem Ipsum is simply dummy text of the printing", 
     "imagen": "https://m.media-amazon.com/images/I/71-I6KlsfiL.jpg",
-    "precio": "$10",
-    "stock": "25",
+    "precio": 10,
+    "stock": 25,
     "tallas": ["s, ", "m, ", "l, ", "xl, "]
     },
     {"id": 5, 
@@ -40,8 +40,8 @@
     "nombre": "Jogger Azul", 
     "descripcion": "Lorem Ipsum is simply dummy text of the printing", 
     "imagen": "https://m.media-amazon.com/images/I/51+jSY5jAsL.jpg",
-    "precio": "$10",
-    "stock": "18",
+    "precio": 10,
+    "stock": 18,
     "tallas": ["xs, ", "s, ", "m, ", "l, ", "xl, ", "xxl, "]
     },
     {"id": 6, 
@@ -49,8 +49,8 @@
     "nombre": "Jogger Rojo", 
     "descripcion": "Lorem Ipsum is simply dummy text of the printing", 
     "imagen": "https://m.media-amazon.com/images/I/519Ef9fzsXL.jpg",
-    "precio": "$10",
-    "stock": "15",
+    "precio": 10,
+    "stock": 15,
     "tallas": ["xs, ", "s, ", "m, ", "l, "]
     },
     {"id": 7, 
@@ -58,8 +58,8 @@
     "nombre": "short beige", 
     "descripcion": "Lorem Ipsum is simply dummy text of the printing", 
     "imagen": "https://m.media-amazon.com/images/I/81f2mGBmecL._AC_UL1500_.jpg",
-    "precio": "$6",
-    "stock": "20",
+    "precio": 6,
+    "stock": 20,
     "tallas": ["xs, ", "s, ", "m, ", "l, "]
     },
     {"id": 8, 
@@ -67,8 +67,8 @@
     "nombre": "short blanco", 
     "descripcion": "Lorem Ipsum is simply dummy text of the printing", 
     "imagen": "https://m.media-amazon.com/images/I/81qhpMqWemL._AC_UL1500_.jpg",
-    "precio": "$8",
-    "stock": "25",
+    "precio": 8,
+    "stock": 25,
     "tallas": ["s, ", "m, ", "l, "]
     },
     {"id": 9, 
@@ -76,8 +76,8 @@
     "nombre": "short celeste", 
     "descripcion": "Lorem Ipsum is simply dummy text of the printing", 
     "imagen": "https://m.media-amazon.com/images/I/81pdyD8Lc5L._AC_UL1500_.jpg",
-    "precio": "$6",
-    "stock": "22",
+    "precio": 6,
+    "stock": 22,
     "tallas": ["xs, ", "s, ", "m, ", "l, ", "xl, "]
     }
 ]

@@ -31,12 +31,10 @@ const ItemDetailContainer = () => {
         getDoc(item).then((snapShot) => {
             if (snapShot.exists()) {
                     setItem({id:snapShot.id, ...snapShot.data()})
-            } else {
-
-            }
+            } 
         })
 
-    }, []);
+    }, [id]);
 
     return (
 

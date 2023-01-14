@@ -1,5 +1,5 @@
 import React, { useContext, useState } from "react";
-import { addDoc, doc, collection, getFirestore, updateDoc} from "firebase/firestore";
+import { addDoc, collection, getFirestore } from "firebase/firestore";
 import { CartContext } from "./context/CartContext";
 
 const Checkout = () => {
@@ -12,8 +12,8 @@ const Checkout = () => {
     const generarOrden = () => {
         const fecha = new Date();
         const order = {
-            buyer: {name:nombre, telephone:telefono, email: correo},
-            items: cart.map(item => ({id:item.id, title:item.nombre, quantity:item.quantity, price:item.precio, price_total:item.quantity * item.precio})),
+            buyer: {name: nombre, phone: telefono, email: correo},
+            items: cart.map(item => ({id: item.id, tittle: item.nombre, price: item.precio})),
             total: sumTotal(),
             order_date: `${fecha.getFullYear()}/${fecha.getMonth() + 1}/${fecha.getDate()} ${fecha.getHours()}:${fecha.getMinutes()}:${fecha.getSeconds()}`
         };
@@ -22,9 +22,6 @@ const Checkout = () => {
         const ordersCollection = collection(db, "orders");
         addDoc(ordersCollection, order).then((snapShot) => {
             setOrderId(snapShot.id);
-            const generatedOrder = doc(db, "orders", snapShot.id); 
-            updateDoc(generatedOrder, {total:order.total * 1.21}); 
-
             clear();
         });
     }
@@ -43,8 +40,8 @@ const Checkout = () => {
                             <input type="number" className="form-control" id="telefono" placeholder="Ingrese su Teléfono" onInput={(e) => {setTelefono(e.target.value)}} />
                         </div>
                         <div className="mb-3">
-                            <label htmlFor="correo" className="form-label">Correo</label>
-                            <input type="text" className="form-control" id="correo" placeholder="Ingrese su correo" onInput={(e) => {setCorreo(e.target.value)}} />
+                            <label htmlFor="Correo" className="form-label">Correo:</label>
+                            <input type="text" className="form-control" id="Correo" placeholder="Ingrese su Correo" onInput={(e) => {setCorreo(e.target.value)}} />
                         </div>
                         <button type="button" className="btn btn-warning" onClick={generarOrden}>Generar Orden</button>
                     </form>
@@ -72,7 +69,7 @@ const Checkout = () => {
             </div>
             <div className="row">
                 <div className="col text-center">
-                    {orderId !== "" ? <div className="alert alert-warning" role="alert">Su orden es: <b>{orderId}</b></div> : ""}
+                    {orderId !== "" ? <div className="alert alert-warning" role="alert">La Orden generada es: <b>{orderId}</b></div> : ""}
                 </div>
             </div>
         </div>

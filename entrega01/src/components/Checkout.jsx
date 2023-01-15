@@ -69,7 +69,7 @@ const Checkout = () => {
             </div>
             <div className="row">
                 <div className="col text-center">
-                    {orderId !== "" ? <div className="alert alert-warning" role="alert">La Orden generada es: <b>{orderId}</b></div> : ""}
+                    {orderId !== "" ? <div className="alert alert-warning" role="alert">Su orden es: <b>{orderId}</b></div> : ""}
                 </div>
             </div>
         </div>

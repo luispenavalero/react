@@ -30,3 +30,8 @@
 
 <p>Luis Miguel Peña Valero</p>
 <p>para el curso de React de CoderHouse, <b>comisión 43625</b></p>
+
+<h2> Gif </h2>
+
+![recording-2023-01-15-21-34-58-1_TJE1sBGX](https://user-images.githubusercontent.com/110312903/212587181-e5eb10ba-ea08-45d6-a02c-f9927e2b1acc.gif)
+

@@ -43,6 +43,10 @@ const Checkout = () => {
                             <label htmlFor="Correo" className="form-label">Correo:</label>
                             <input type="text" className="form-control" id="Correo" placeholder="Ingrese su Correo" onInput={(e) => {setCorreo(e.target.value)}} />
                         </div>
+                        <div className="mb-3">
+                            <label htmlFor="Correo" className="form-label">Repetir Correo:</label>
+                            <input type="text" className="form-control" id="Correo" placeholder="Ingrese su Correo" onInput={(e) => {setCorreo(e.target.value)}} />
+                        </div>
                         <button type="button" className="btn btn-warning" onClick={generarOrden}>Generar Orden</button>
                     </form>
                 </div>
